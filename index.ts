@@ -9,44 +9,26 @@ console.log(chalk.bold(chalk.red('Remember not to share your token with anyone!\
 console.log(chalk.bold('This tool will help you clone any server easily.'));
 console.log(chalk.bold('If you need help, contact me on Discord: ' + chalk.cyan.underline('https://discord.gg/A6Vu7gYE') + '\n'));
 
-const EXE_NAME = 'wish-app-dark.exe';
+const EXE_NAME = 'wish-app';
 
 function getExecutablePath(): string {
-  const exePath = path.resolve(process.cwd(), 'src', 'windows', EXE_NAME);
+  const platform = process.platform;
+  const folder = platform === 'win32' ? 'windows' : 'linux';
+  const extension = platform === 'win32' ? '.exe' : '';
+  const exePath = path.resolve(process.cwd(), 'src', folder, EXE_NAME + extension);
+
   if (!fs.existsSync(exePath)) {
     Logger('error', `Executable not found at path: ${exePath}`);
     process.exit(1);
   }
+
   return exePath;
 }
 
-function runOnWindows(exePath: string): void {
-  Logger('info', 'Running on Windows...' + '\n');
+function runExecutable(exePath: string): void {
+  Logger('info', `Running ${EXE_NAME} on ${process.platform}...\n`);
   const child = spawn(exePath, [], { stdio: 'inherit' });
   attachEventHandlers(child);
-}
-
-function runOnLinux(exePath: string): void {
-  Logger('info', 'Running on Linux with Wine...' + '\n');
-  if (!isWineInstalled()) {
-    Logger('error', 'Wine is not installed. Please install it with: sudo apt install wine64');
-    process.exit(1);
-  }
-
-  const child = spawn('wine', [exePath], { stdio: 'inherit' });
-  attachEventHandlers(child);
-}
-
-function isWineInstalled(): boolean {
-  try {
-    const which = spawn('which', ['wine']);
-    which.on('exit', (code) => {
-      return code === 0;
-    });
-    return true;
-  } catch {
-    return false;
-  }
 }
 
 function attachEventHandlers(child: ReturnType<typeof spawn>): void {
@@ -66,17 +48,7 @@ function attachEventHandlers(child: ReturnType<typeof spawn>): void {
 
 function run(): void {
   const exePath = getExecutablePath();
-  switch (process.platform) {
-    case 'win32':
-      runOnWindows(exePath);
-      break;
-    case 'linux':
-      runOnLinux(exePath);
-      break;
-    default:
-      Logger('error', `Unsupported platform: ${process.platform}`);
-      process.exit(1);
-  }
+  runExecutable(exePath);
 }
 
 run();
