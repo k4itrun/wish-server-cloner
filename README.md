@@ -50,17 +50,25 @@ Wish server cloner is an app that will generally help you completely with the cl
 - Now copy this script in the console:
 
 ```js
-(webpackChunkdiscord_app.push([
+const modules = [];
+
+webpackChunkdiscord_app.push([
   [''],
   {},
   (e) => {
-    m = [];
-    for (let c in e.c) m.push(e.c[c]);
+    for (const key in e.c) {
+      if (Object.prototype.hasOwnProperty.call(e.c, key)) {
+        modules.push(e.c[key]);
+      }
+    }
   },
-]),
-m)
-  .find((m) => m?.exports?.default?.getToken !== void 0)
-  .exports.default.getToken();
+]);
+
+const token = modules
+  .find((m) => m?.exports?.default?.getToken !== undefined)
+  ?.exports?.default?.getToken?.();
+
+console.log(token);
 ```
 
 - This should bring up your Discord token
