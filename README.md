@@ -3,7 +3,7 @@
 
 <div align="center">
 
-<img src=".github/assets/wish.ico" width=100 alt="Wish Cloner"/><br/>
+<img src=".github/assets/wish.png" width=100 alt="Wish Cloner"/><br/>
 
 # [@Wish Cloner](https://github.com/k4itrun/wish-server-cloner)
 Wish server cloner is an app that will generally help you completely with the cloning of your favourite server.
