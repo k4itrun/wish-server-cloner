@@ -1,11 +1,9 @@
-
-
-
 <div align="center">
 
 <img src=".github/assets/wish.png" width=100 alt="Wish Cloner"/><br/>
 
 # [@Wish Cloner](https://github.com/k4itrun/wish-server-cloner)
+
 Wish server cloner is an app that will generally help you completely with the cloning of your favourite server.
 
 </div>
@@ -37,29 +35,37 @@ Wish server cloner is an app that will generally help you completely with the cl
 
 ## Installation
 
-- Get the most recent version of Node.js from [this link](https://nodejs.org/en/download/) and proceed with the installation  
-- Clone this repository or [download it as a ZIP](https://github.com/k4itrun/wish-server-cloner/archive/refs/heads/main.zip)  
-- Locate the downloaded `.zip` file and unzip it  
-- Open your terminal in the extracted folder (On Windows, press `Win` + `R`, type `cmd`, then use `cd` and drag the folder into the terminal)  
+- Get the most recent version of Node.js from [this link](https://nodejs.org/en/download/) and proceed with the installation
+- Clone this repository or [download it as a ZIP](https://github.com/k4itrun/wish-server-cloner/archive/refs/heads/main.zip)
+- Locate the downloaded `.zip` file and unzip it
+- Open your terminal in the extracted folder (On Windows, press `Win` + `R`, type `cmd`, then use `cd` and drag the folder into the terminal)
 - Install the required packages by running either `npm install` or `pnpm install`
 - Search for your [account token](#how-to-take-my-token-my-account-token) in the browser
 - Just follow the prompts in the CLI, and everything will be set up!
 
 ## How to take my token (My account token)
+
 - Login to Discord from chrome browser, brave, microsoft edge, forefox, etc...
 - Use the key combination inside discord from the browser `Ctrl` + `Shift` + `i` (The idea is to enter the development console on the browser).
 - Now copy this script in the console:
+
 ```js
-(webpackChunkdiscord_app.push([[""], {}, (e) => {
-  m = [];
-  for (let c in e.c) m.push(e.c[c]);
-},]), m)
- .find((m) => m?.exports?.default?.getToken !== void 0)
- .exports.default.getToken();
+(webpackChunkdiscord_app.push([
+  [''],
+  {},
+  (e) => {
+    m = [];
+    for (let c in e.c) m.push(e.c[c]);
+  },
+]),
+m)
+  .find((m) => m?.exports?.default?.getToken !== void 0)
+  .exports.default.getToken();
 ```
+
 - This should bring up your Discord token
 
-##  Issues
+## Issues
 
 If you run into any issues or have ideas on how to improve this project, feel free to open a [new issue](https://github.com/k4itrun/wish-server-cloner/issues) and provide a clear and detailed explanation.
 
