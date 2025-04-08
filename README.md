@@ -12,7 +12,7 @@ Wish server cloner is an app that will generally help you completely with the cl
 
 <div align="center">
   <a aria-label="GitHub License" href="https://github.com/k4itrun/wish-server-cloner/blob/master/license.md">
-    <img src="https://img.shields.io/github/license/k4itrun/blog?color=%23e3aef0&logo=github&style=flat-square&label=License">
+    <img src="https://img.shields.io/github/license/k4itrun/k4itrun?color=%23e3aef0&logo=github&style=flat-square&label=License">
   </a>
   <a aria-label="Version" href="https://github.com/k4itrun/wish-server-cloner/releases">
     <img src="https://img.shields.io/github/v/release/k4itrun/wish-server-cloner?color=%23e3aef0&logo=github&style=flat-square&label=Version">
