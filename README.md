@@ -27,16 +27,13 @@ Wish server cloner is an app that will generally help you completely with the cl
 <div>
   <a href="https://shell.cloud.google.com/cloudshell/open?cloudshell_git_repo=https://github.com/wishware/wish-server-cloner.git&tutorial=README.md">
     <img alt="Run on Google Cloud Shell" src="https://gstatic.com/cloudssh/images/open-btn.svg" height="30"/>
-  </a>
-  
+  </a><br/>
   <a href="https://glitch.com/edit/#!/import/github/wishware/wish-server-cloner">
     <img alt="Remix on Glitch" src="https://cdn.glitch.com/2703baf2-b643-4da7-ab91-7ee2a2d00b5b%2Fremix-button.svg" height="30"/>
-  </a>
-  
+  </a><br/>
   <a href="https://repl.it/github/wishware/wish-server-cloner">
     <img alt="Run on Repl.it" src="https://repl.it/badge/github/k4itrun/wish-server-cloner" height="40"/>
-  </a>
-  
+  </a><br/>
   <a href="https://codesandbox.io/p/github/wishware/wish-server-cloner">
     <img alt="Run on CodeSandbox" src="https://user-images.githubusercontent.com/1863771/68405395-5020f400-0180-11ea-8818-8cb255d9fe71.png" height="44"/>
   </a>
