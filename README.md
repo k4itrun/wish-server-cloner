@@ -108,6 +108,8 @@ This project uses the MIT license. You can find the full license details in the 
 
 For any inquiries or support, you can reach out via [billoneta@proto.me](mailto:billoneta@proto.me) or join our [Discord Server](https://discord.gg/A6Vu7gYE).
 
+---
+
 <p align="right">
   <picture>
     <img src=".github/assets/wish.png" width="18" loading="lazy" alt="Wish Cloner"/>
