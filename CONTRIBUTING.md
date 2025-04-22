@@ -1,4 +1,4 @@
-# Contributing to [app-wishxner](https://github.com/k4itrun/app-wishxner)
+# Contributing to [app-wishxner](https://github.com/wishware/app-wishxner)
 
 Thank you for your interest in contributing to this project! We welcome all contributions — whether it's reporting bugs, suggesting new features, or submitting pull requests. Please read the following guidelines to ensure a smooth and effective contribution process.
 
