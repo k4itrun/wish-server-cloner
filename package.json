@@ -17,18 +17,18 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/k4itrun/app-wishxner.git"
+    "url": "git+https://github.com/wishware/app-wishxner.git"
   },
   "keywords": [],
   "author": {
-    "name": "k4itrun",
+    "name": "wishware",
     "email": "billoneta@proto.me"
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/k4itrun/app-wishxner/issues"
+    "url": "https://github.com/wishware/app-wishxner/issues"
   },
-  "homepage": "https://github.com/k4itrun/app-wishxner#readme",
+  "homepage": "https://github.com/wishware/app-wishxner#readme",
   "dependencies": {
     "chalk": "^5.4.1"
   },
