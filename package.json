@@ -1,7 +1,7 @@
 {
   "name": "app-wishxner",
   "description": "Wish server cloner is an app that will generally help you completely with the cloning of your favourite server.",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "exports": null,
   "type": "module",
   "scripts": {
